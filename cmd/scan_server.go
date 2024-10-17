@@ -57,6 +57,4 @@ func initFlag(cmd *cobra.Command) {
 	cmd.Flags().BoolVarP(&server, "server", "s", false, "Probe open ports to determine service/version info")
 	cmd.Flags().StringSliceVarP(&target, "target", "t", []string{}, "Scan targets:\n"+"127.0.0.1,192.168.0.1/24")
 	cmd.Flags().StringSliceVarP(&port, "port", "p", []string{}, "Scan ports:"+"1-50,88,8080")
-	cmd.MarkFlagRequired("target")
-	cmd.MarkFlagRequired("port")
 }

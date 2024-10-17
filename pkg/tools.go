@@ -273,3 +273,7 @@ func FileIsExist(filename string) bool {
 	}
 	return false
 }
+
+func TcpSend() {
+
+}
